@@ -9,7 +9,7 @@ echo '<pre>';
 
 echo 'VALIDACIONES:<br><br>';
 
-// VALIDACION NOMBRE
+// VALIDACION NOMBRE prueba
 
 if (isset($_GET['nombre'])) {                                                       // EXISTE LA VARIABLE?
     $nombre = $_GET['nombre'];
@@ -110,7 +110,9 @@ if (isset($_GET['marca'])) {                                        // EXISTE LA
     echo "(ERROR) Marca: La variable no esta definida.<br><br>";
 }
 
-
+function asd ($rango, $campo) {
+    if 
+}
 // VALIDACION GARANTIA
 
 if (isset($_GET['garantia'])) {                                                         // EXISTE LA VARIABLE?
