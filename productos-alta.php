@@ -10,11 +10,11 @@ include '_header.php';
     </div>
     <div class="col-md-3 col-sm-6 col-xxl-1">
         <label for="precio" class="form-label">Precio:</label>
-        <input type="number" step="0.01" min="0" class="form-control" id="precio" name="precio"> <!-- step="0.01" SIRVE PARA DELIMITAR LA CANTIDAD DE DECIMALES -->
+        <input type="number" step="0.01" min="0" class="form-control" id="precio" name="precio" autocomplete="off"> <!-- step="0.01" SIRVE PARA DELIMITAR LA CANTIDAD DE DECIMALES -->
     </div>
     <div class="col-md-3 col-sm-6 col-xxl-1">
         <label for="stock" class="form-label">Stock:</label>
-        <input type="number" step="1" class="form-control" id="stock" name="stock"> <!-- EN ESTE CASO EL step="1" NO DEJA USAR DECIMALES-->
+        <input type="number" step="1" class="form-control" id="stock" name="stock" autocomplete="off"> <!-- EN ESTE CASO EL step="1" NO DEJA USAR DECIMALES-->
     </div>
     <div class="col-md-6 col-xxl-3">
         <label for="categoria" class="form-label">Categoría:</label>
@@ -116,7 +116,7 @@ include '_header.php';
     </div>
     <div class="col-md-6">
         <label for="descripcion" class="form-label">Descripción:</label>
-        <textarea class="form-control" id="descripcion" name="descripcion" minlength="10" maxlength="500"></textarea>
+        <textarea class="form-control" id="descripcion" name="descripcion" minlength="10" maxlength="500" autocomplete="off"></textarea>
     </div>
 
     <input type="submit" class="btn btn-primary mb-3" value="Dar de alta">

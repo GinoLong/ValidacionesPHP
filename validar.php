@@ -10,16 +10,12 @@ echo '<pre>';
 echo 'VALIDACIONES:<br><br>';
 
 // VALIDACION NOMBRE prueba
-
+//            if (preg_match("/^[a-zA-z0-9 ÁÉÍÓÚáéíóúÑñ()-!*+]*$/", $nombre))
 if (isset($_GET['nombre'])) {                                                       // EXISTE LA VARIABLE?
     $nombre = $_GET['nombre'];
     if (!empty($nombre)) {                                                          // ESTA VACIA LA VARIABLE?
         if (strlen($nombre) >= 3 && strlen($nombre) <= 40) {                        // TIENE LA CANTIDAD DE CARACTERES ADECUADA?
-            if (preg_match("/^[a-zA-z0-9 ÁÉÍÓÚáéíóúÑñ()-!*+]*$/", $nombre)) {       // TIENE LOS CARACTERES ADMITIDOS? 
                 echo "Nombre: Coincide con la validacion. [$nombre]<br><br>";       // TODOS LOS PARAMETROS COINCIDEN
-            } else {
-                echo "(ERROR) Nombre: La variable tiene caracteres no admitidos. [$nombre]<br><br>";
-            }
         } else {
             echo "(ERROR) Nombre: La variable tiene el numero incorrecto de caracteres. [$nombre]<br><br>";
         }
@@ -110,9 +106,9 @@ if (isset($_GET['marca'])) {                                        // EXISTE LA
     echo "(ERROR) Marca: La variable no esta definida.<br><br>";
 }
 
-function asd ($rango, $campo) {
-    if 
-}
+// function asd ($rango, $campo) {
+//     if 
+// }
 // VALIDACION GARANTIA
 
 if (isset($_GET['garantia'])) {                                                         // EXISTE LA VARIABLE?
